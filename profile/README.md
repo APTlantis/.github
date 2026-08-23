@@ -4,10 +4,10 @@
 
 ### Local-first software, governed engineering systems, archival infrastructure, and operator-focused tools.
 
-![Projects](https://img.shields.io/badge/projects-37-2aa5bc?style=for-the-badge)
-![Average Completion](https://img.shields.io/badge/average_completion-73.4%25-8957e5?style=for-the-badge)
-![Production](https://img.shields.io/badge/production-4-2ea043?style=for-the-badge)
-![Evaluated](https://img.shields.io/badge/evaluated-2026--07--30-51678d?style=for-the-badge)
+![Projects](https://img.shields.io/badge/projects-27-2aa5bc?style=for-the-badge)
+![Average Completion](https://img.shields.io/badge/average_completion-82.9%25-8957e5?style=for-the-badge)
+![Production](https://img.shields.io/badge/production-6-2ea043?style=for-the-badge)
+![Evaluated](https://img.shields.io/badge/evaluated-2026--08--23-51678d?style=for-the-badge)
 
 **Build useful local tools. Preserve important artifacts. Govern the work. Record the evidence.**
 
@@ -29,35 +29,32 @@ APTlantis is not organized as a loose collection of unrelated experiments. Proje
 
 ## Current Portfolio Snapshot
 
-The current evaluation covers **37 projects** with an average assessed completion of **73.4%**.
+The current evaluation covers **27 projects** with an average assessed completion of **82.9%**.
 
 | Metric | Current Evaluation |
 |---|---:|
-| Total projects | **37** |
-| Average completion | **73.4%** |
-| Production | **4** |
-| Active | **3** |
-| Candidate active | **2** |
-| In progress | **16** |
-| Prototype | **4** |
-| Paused | **7** |
-| Draft | **1** |
-| High complexity | **11** |
-| Medium complexity | **24** |
-| Low complexity | **2** |
+| Total projects | **27** |
+| Average completion | **82.9%** |
+| Production | **6** |
+| In progress | **18** |
+| Maintenance | **1** |
+| Paused | **1** |
+| Prototype | **1** |
+| High complexity | **17** |
+| Medium complexity | **10** |
 
-The evaluation source records `Paused`/`paused`, `active`, `candidate-active`, and other lifecycle values with their project-specific capitalization. The table above normalizes equivalent labels for readability.
+This snapshot reflects the projects explicitly registered for the August 23 evaluation. A lower project count than the prior snapshot means the evaluated portfolio boundary changed; it does not imply that repositories were deleted.
 
 ### How to Read These Numbers
 
 A completion percentage is an assessment of how much of the intended project exists. It is **not** a substitute for lifecycle state or release verification.
 
-A project may be highly complete but paused, awaiting a lifecycle decision, missing a release-evidence bundle, or blocked on packaging and verification. Likewise, an active standard may be useful and widely applied while still requiring additional validators, examples, or promotion evidence.
+A project may be highly complete but paused, in maintenance, awaiting a lifecycle decision, missing a release-evidence bundle, or blocked on packaging and verification. Likewise, an in-progress standard may already be useful while still requiring validators, examples, adoption evidence, or promotion work.
 
 APTlantis therefore treats these as separate questions:
 
 - **Completion:** How much of the intended system exists?
-- **Lifecycle:** Is the project active, paused, experimental, or considered production?
+- **Lifecycle:** Is the project in progress, paused, maintained, prototyped, or considered production?
 - **Verification:** Have its build, tests, artifacts, installation behavior, hashes, and release evidence been recorded?
 - **Governance:** Does it satisfy the standards appropriate to its project type?
 
@@ -102,87 +99,55 @@ Websites, asset standards, component libraries, logo systems, and the Blue Slate
 
 ## Flagship Systems
 
-These projects currently provide the clearest view of what APTlantis is becoming. Their inclusion here reflects architectural importance and representative value, not only lifecycle status.
-
-### WGS — Workspace Governance Standard
-
-![Status](https://img.shields.io/badge/status-active-8957e5?style=flat-square)
-![Completion](https://img.shields.io/badge/completion-92%25-2aa5bc?style=flat-square)
-![Complexity](https://img.shields.io/badge/complexity-high-b7410e?style=flat-square)
-
-WGS is the workspace constitution. It defines entity-named manifests, workspace roots and target maps, agent read-first behavior, lifecycle classifications, required project artifacts, migration policy, audit tooling, inventory generation, health records, and recoverable workspace orientation.
-
-Its central purpose is to ensure that a project can be understood from its governed records rather than reconstructed from memory or directory archaeology.
+These projects currently provide a representative cross-section of APTlantis: governance, datasets, desktop software, command tooling, and portfolio intelligence. Inclusion reflects architectural importance and representative value, not only lifecycle state.
 
 ### DRS — Desktop Release Standard
 
-![Status](https://img.shields.io/badge/status-production-2ea043?style=flat-square)
-![Completion](https://img.shields.io/badge/completion-95%25-2aa5bc?style=flat-square)
-![Complexity](https://img.shields.io/badge/complexity-medium-51678d?style=flat-square)
+![Status](https://img.shields.io/badge/status-Production-2ea043?style=flat-square)
+![Completion](https://img.shields.io/badge/completion-96%25-2aa5bc?style=flat-square)
+![Complexity](https://img.shields.io/badge/complexity-High-b7410e?style=flat-square)
 
-DRS governs local-first Windows desktop releases. It provides an authoritative specification, manifest schema, PowerShell scaffolding and validation tooling, release-note templates, trust and security records, dependency and migration documentation, artifact naming requirements, SHA-256 integrity requirements, and per-release verification gates.
+DRS defines release readiness for local-first Windows desktop applications, including versioning, release notes, adopter manifests, artifact naming, hashes, signing, documentation, verification evidence, distribution posture, and release gates. It operates as a mature SFDS-governed standard suite with PowerShell and Python validation tools, templates, schemas, examples, and adoption guidance.
 
-DRS is one of the clearest examples of the ecosystem moving from “the application builds” to “the release can be independently understood and checked.”
+### WGS — Workspace Governance Standard
 
-### AptlantisConsole
+![Status](https://img.shields.io/badge/status-In_Progress-8957e5?style=flat-square)
+![Completion](https://img.shields.io/badge/completion-92%25-2aa5bc?style=flat-square)
+![Complexity](https://img.shields.io/badge/complexity-High-b7410e?style=flat-square)
 
-![Status](https://img.shields.io/badge/status-in_progress-db6d28?style=flat-square)
-![Completion](https://img.shields.io/badge/completion-90%25-2aa5bc?style=flat-square)
-![Complexity](https://img.shields.io/badge/complexity-high-b7410e?style=flat-square)
-
-AptlantisConsole is a local-first desktop operations console built from a Next.js 16 frontend, Tauri 2 Windows shell, and bundled Node runtime. It brings Docker, Git, MongoDB, DuckDB, network and system tools, terminals, SSH/FTP, command workflows, TOML runbooks, screenshot capture, and persistent operator artifacts into one working surface.
-
-The current application is packaged as version 1.0.8. Its main remaining work is not basic capability; it is DRS release hardening: artifact hashes, verification blocks, release evidence, signing posture, and documentation delivery.
+WGS governs Aptlantis workspace structure, entity registration, manifest conventions, lifecycle visibility, standard relationships, agent orientation, shared services, and workspace health. It uses manifests, read-first documents, templates, audit tools, inventories, and structured JSONL records to keep the local workspace discoverable and recoverable.
 
 ### CratesDataset
 
-![Status](https://img.shields.io/badge/status-in_progress-db6d28?style=flat-square)
+![Status](https://img.shields.io/badge/status-In_Progress-8957e5?style=flat-square)
 ![Completion](https://img.shields.io/badge/completion-93%25-2aa5bc?style=flat-square)
-![Complexity](https://img.shields.io/badge/complexity-high-b7410e?style=flat-square)
+![Complexity](https://img.shields.io/badge/complexity-High-b7410e?style=flat-square)
 
-CratesDataset is a Rust-based dataset foundry that transforms immutable monthly crates.io version snapshots into eight purpose-built datasets in JSONL-Zstandard and Parquet formats. It includes versioned schemas, provenance records, statistics, integrity hashes, deterministic partitioned processing, rejected-record evidence, and a Hugging Face Hub packaging adapter.
+Rust CLI dataset foundry that converts immutable monthly crates.io JSONL snapshots into eight deterministic, provenance-rich datasets in JSONL-Zstandard and Parquet formats, with bounded partition processing, validation, integrity manifests, and a gated Hugging Face publication adapter.
 
-Its remaining gates are intentionally strict: redistribution approval, deterministic rebuild acceptance, and stabilization of observed Parquet encoding variance.
+### CommandWizard
 
-### FileCabinet
-
-![Status](https://img.shields.io/badge/status-paused-6c757d?style=flat-square)
+![Status](https://img.shields.io/badge/status-Production-2ea043?style=flat-square)
 ![Completion](https://img.shields.io/badge/completion-90%25-2aa5bc?style=flat-square)
-![Complexity](https://img.shields.io/badge/complexity-high-b7410e?style=flat-square)
+![Complexity](https://img.shields.io/badge/complexity-High-b7410e?style=flat-square)
 
-FileCabinet is a VB.NET/WPF desktop vault for deliberate retention of technical artifacts. It provides deterministic copy/move intake, a local JSON catalog, multi-hash fingerprints, preview and thumbnail generation, health analysis, repair and recovery workflows, deterministic packaging, and a headless CLI.
+Local-first Tauri desktop application for importing, editing, organizing, and generating CLI command workflows from TOML schemas. It stores schemas, favorites, logs, managed scripts, and launcher shims locally, while keeping generated command execution outside the current safety boundary.
 
-Its paused state illustrates why lifecycle and completion are tracked separately: the application is substantial, but its current checkout still requires rebuilt installer evidence, verification records, and a release-evidence bundle.
+### Filing Cabinet
 
-### ArchiveHasher
+![Status](https://img.shields.io/badge/status-Maintenance-51678d?style=flat-square)
+![Completion](https://img.shields.io/badge/completion-88%25-2aa5bc?style=flat-square)
+![Complexity](https://img.shields.io/badge/complexity-High-b7410e?style=flat-square)
 
-![Status](https://img.shields.io/badge/status-production-2ea043?style=flat-square)
-![Completion](https://img.shields.io/badge/completion-90%25-2aa5bc?style=flat-square)
-![Complexity](https://img.shields.io/badge/complexity-high-b7410e?style=flat-square)
+A local-first Windows WPF vault that ingests selected technical artifacts, stores them with catalog metadata and hashes, generates previews and extracted text, exposes health findings, and supports operator-controlled repair, recovery, verification, search, and export.
 
-ArchiveHasher is a Go command suite implementing AAMHS archive-publication workflows. `archive-hasher` computes an eight-algorithm hash suite over an archive byte stream and writes a canonical `snapshot-hashes.txt` manifest. `manifest-signer` creates detached PGP and optional post-quantum SLH-DSA signatures without changing the canonical manifest.
+### AnalyzeProjects
 
-Its next maturity step is CTS alignment: explicit command contracts, stable exit-code documentation, machine-readable output policy, version output, destructive-operation guidance, and release verification records.
+![Status](https://img.shields.io/badge/status-In_Progress-8957e5?style=flat-square)
+![Completion](https://img.shields.io/badge/completion-85%25-2aa5bc?style=flat-square)
+![Complexity](https://img.shields.io/badge/complexity-High-b7410e?style=flat-square)
 
-### Structra
-
-![Status](https://img.shields.io/badge/status-in_progress-db6d28?style=flat-square)
-![Completion](https://img.shields.io/badge/completion-60%25-2aa5bc?style=flat-square)
-![Complexity](https://img.shields.io/badge/complexity-medium-51678d?style=flat-square)
-
-Structra is a Tauri desktop application for visually constructing structured data and schema-shaped documents. Its React/TypeScript interface and Rust backend support structured authoring workflows intended to make JSON, YAML, TOML, XML, and related formats easier to build and reason about.
-
-The project has deliberately moved away from broad feature accumulation toward a clearer core identity: a focused graphical environment for structured construction.
-
-### AptDiskwright
-
-![Status](https://img.shields.io/badge/status-prototype-0078d4?style=flat-square)
-![Completion](https://img.shields.io/badge/completion-65%25-2aa5bc?style=flat-square)
-![Complexity](https://img.shields.io/badge/complexity-high-b7410e?style=flat-square)
-
-AptDiskwright is a Windows 11 disk-planning and GPT/UEFI migration prototype built around one operating rule: **plan first, execute second, record everything**.
-
-It uses an unelevated WPF client for inventory, planning, validation, and review, with privileged operations crossing a versioned, length-prefixed named-pipe protocol to a demand-start C++ Windows service. Physical-disk mutation remains disabled pending disposable-VHD and bootable-VM qualification evidence.
+AnalyzeProjects scans the explicitly registered Aptlantis portfolio, applies group-specific governance prompts, normalizes model responses into structured project records, and compiles JSON and Markdown dashboard outputs. It is a Python analysis utility supporting local verification with optional OpenAI-compatible model calls.
 
 ---
 
@@ -192,16 +157,16 @@ APTlantis standards are not generic policy documents. Each standard defines a bo
 
 | Standard | Status | Completion | Governs |
 |---|---:|---:|---|
-| **WGS** | Active | 92% | Workspace structure, manifests, lifecycle, agent orientation, audits, and recovery |
-| **SFDS** | Production | 90% | How standards themselves are authored, versioned, validated, adopted, and preserved |
-| **PPS** | Active | 85% | Proposal-first definition of project intent, boundaries, success criteria, risks, and readiness |
-| **DRS** | Production | 95% | Local-first Windows desktop release structure, evidence, integrity, and verification |
-| **CTS** | In Progress | 85% | Stable CLI contracts, exit codes, machine output, destructive behavior, and automation compatibility |
-| **WDS** | In Progress | 80% | Site manifests, deployment records, accessibility, SEO, route checks, rollback, and monitoring |
-| **LDS** | Candidate Active | 75% | Public library interfaces, stability levels, compatibility, extension contracts, and consumers |
-| **AAMHS** | In Progress | 85% | Preservation-oriented multi-hash manifests and detached-signature policy |
-| **SESM** | In Progress | 90% | Structured provenance and semantic metadata embedded in SVG assets |
-| **Blue Slate** | Candidate Active | 70% | Visual tokens, layout patterns, framework adapters, and interface validation |
+| **WGS** | In Progress | 92% | Workspace structure, manifests, lifecycle, agent orientation, audits, and recovery |
+| **SFDS** | Production | 96% | How standards are authored, versioned, validated, adopted, and preserved |
+| **PPS** | In Progress | 86% | Project intent, boundaries, success and failure criteria, risks, roadmaps, and readiness |
+| **DRS** | Production | 96% | Local-first Windows desktop releases, evidence, integrity, packaging, and verification |
+| **CTS** | In Progress | 91% | CLI contracts, exit codes, structured output, destructive behavior, and automation compatibility |
+| **WDS** | In Progress | 84% | Web manifests, deployment evidence, accessibility, routes, rollback, and monitoring |
+| **LDS** | In Progress | 85% | Library interfaces, stability, compatibility, extension contracts, and consumers |
+| **AAMHS** | In Progress | 84% | Preservation-oriented hash manifests, detached signatures, validation, and integrity records |
+| **SESM** | In Progress | 88% | Structured provenance and semantic metadata embedded in SVG assets |
+| **BlueSlate** | In Progress | 70% | Visual tokens, layout patterns, framework profiles, starter packs, and adoption evidence |
 
 ### Standards Relationships
 
@@ -216,7 +181,7 @@ The standards form a practical chain rather than a hierarchy of paperwork:
    - **WDS** for websites
    - **LDS** for libraries
 5. **AAMHS** and related integrity practices preserve high-value artifacts and publication evidence.
-6. **SESM** and **Blue Slate** govern semantic visual metadata and interface language where appropriate.
+6. **SESM** and **BlueSlate** govern semantic visual metadata and interface language where appropriate.
 
 The goal is not maximum process. The goal is enough explicit structure that a future operator or agent can answer: what is this, why does it exist, what state is it in, how is it built, what evidence exists, and what remains unresolved?
 
@@ -224,67 +189,57 @@ The goal is not maximum process. The goal is enough explicit structure that a fu
 
 ## Project Catalog
 
+### Governance and Standards Projects
+
+| Project | Status | Completion | Description |
+|---|---:|---:|---|
+| **DRS** | Production | 96% | DRS defines release readiness for local-first Windows desktop applications, including versioning, release notes, adopter manifests, artifact naming, hashes, signing, documentation, verification evidence, distribution posture, and release gates. It operates as a mature SFDS-governed standard suite with PowerShell and Python validation tools, templates, schemas, examples, and adoption guidance. |
+| **SFDS** | Production | 96% | SFDS defines the structure, metadata, adoption process, validation boundaries, compatibility rules, and preservation practices for Aptlantis standards. It provides a suite manifest schema, templates, examples, manual guidance, and an executable structural validator. |
+| **WGS** | In Progress | 92% | WGS governs Aptlantis workspace structure, entity registration, manifest conventions, lifecycle visibility, standard relationships, agent orientation, shared services, and workspace health. It uses manifests, read-first documents, templates, audit tools, inventories, and structured JSONL records to keep the local workspace discoverable and recoverable. |
+| **CTS** | In Progress | 91% | CTS is a candidate Aptlantis governance standard for CLI tools and automation utilities. It defines command contracts, exit codes, stdout/stderr separation, structured output envelopes, stability rules, destructive-command safeguards, distribution posture, and release verification relationships. |
+| **PPS** | In Progress | 86% | PPS defines the pre-implementation record for Aptlantis projects, covering mission, boundaries, success and failure criteria, constraints, risks, responsibility posture, roadmap, version completion shape, and handoff to WGS and delivery standards. |
+| **LDS** | In Progress | 85% | LDS governs library crates, packages, and SDKs consumed by other code. It defines interface notes, stability levels, semver and breaking-change policies, extension contracts, runtime constraints, consumer tracking, adoption guidance, and lightweight validation. |
+| **AAMHS** | In Progress | 84% | AAMHS governs preservation-oriented archive integrity through hash manifests, optional detached signatures, validation procedures, and integrity records. It supplies schemas, templates, examples, adoption guidance, and lightweight Python validators, while delegating release-artifact hashing to ARHS. |
+| **WDS** | In Progress | 84% | WDS governs website and web-application manifests, deployment evidence, accessibility and metadata checks, route verification, rollback expectations, and monitoring records. It is an active candidate standard integrated with SFDS, WGS, and PPS. |
+
 ### Desktop and Operator Applications
 
 | Project | Status | Completion | Description |
 |---|---:|---:|---|
-| **AptlantisConsole** | In Progress | 90% | Desktop operations dashboard for local development, infrastructure, data tools, terminals, and reusable operator workflows. |
-| **FileCabinet** | Paused | 90% | Deliberate technical-artifact vault with integrity fingerprints, previews, health checks, repair, recovery, and CLI automation. |
-| **CommandWizard** | Paused | 95% | Schema-driven WPF/.NET application for creating and using TOML command schemas through guided command construction. |
-| **ChromeArchivalPlugin** | In Progress | 85% | Chrome MV3 extension for deterministic local capture of metadata, links, readable Markdown, full-page Markdown, screenshots, and PDFs. |
-| **Chat** | Paused | 75% | ChatArchive desktop importer and reader for OpenAI/ChatGPT exports with normalized conversation trees, assets, and SQLite indexes. |
-| **Tauri-IT** | In Progress | 75% | DRS-governed Tauri desktop adaptation of the IT-Tools workspace. |
-| **QB-Winget** | In Progress | 70% | Local-first QB64/InForm interface around Winget search and package operations. |
-| **AptDiskwright** | Prototype | 65% | Plan-first disk inventory, transaction design, conflict validation, and GPT/UEFI migration analysis. |
-| **Structra** | In Progress | 60% | Visual construction environment for structured data and schema-shaped documents. |
-| **CodeNote** | Prototype | 40% | Lightweight Tauri editor with Markdown preview, syntax highlighting, Mermaid, tabs, and optional native-terminal integration. |
-| **WinTrim** | Prototype | 35% | Evidence-driven Windows trimming and configuration workspace based on manifests, presets, exports, and machine profiles. |
-| **WingettingQB64** | Paused | 0% | Registered placeholder retained for lifecycle and historical identity; no implementation was present at evaluation time. |
+| **CommandWizard** | Production | 90% | Local-first Tauri desktop application for importing, editing, organizing, and generating CLI command workflows from TOML schemas. It stores schemas, favorites, logs, managed scripts, and launcher shims locally, while keeping generated command execution outside the current safety boundary. |
+| **Filing Cabinet** | Maintenance | 88% | A local-first Windows WPF vault that ingests selected technical artifacts, stores them with catalog metadata and hashes, generates previews and extracted text, exposes health findings, and supports operator-controlled repair, recovery, verification, search, and export. |
+| **Structra** | Production | 86% | Structra is a local-first Windows Tauri application for visually editing structured data, inspecting its hierarchy, validating documents, transforming values or schemas, and previewing JSON, YAML, TOML, and XML output. It serves as a maintained DRS desktop workspace and locally verified release artifact. |
+| **ChromeArchivalPlugin** | In Progress | 85% | A local-first Chrome/Chromium MV3 extension that captures page lists, links, metadata, Markdown, screenshots, and PDFs into browser storage and deterministic download folders for Aptlantis archival workflows. |
+| **Chat** | In Progress | 85% | ChatArchive is a Tauri desktop archive that imports OpenAI conversation exports through Rust, normalizes conversations and artifacts into a filesystem-backed library, stores searchable state in SQLite, and provides browsing, search, organization, rendering, and export workflows. |
+| **AptlantisConsole** | In Progress | 82% | A Tauri 2 Windows desktop console combining a Next.js operator dashboard with local command workflows, infrastructure controls, terminals, editors, database tools, intake records, embeddings, and operational logs. |
+| **Ops Control Surface** | In Progress | 70% | A local-first Tauri desktop workspace for creating, editing, moving, relating, deleting, and reviewing typed Aptlantis operational objects. It uses a React interface, Rust commands, SQLite persistence, managed project artifact storage, and release-readiness receipts. |
+| **Theme-Preview** | In Progress | 70% | A local-first Tauri desktop workbench that loads TOML component, theme, variant, group, source, and page metadata, renders deterministic previews, and produces screenshot and validation reports for Aptlantis UI systems. |
+| **CodeNote** | Prototype | 65% | CodeNote is a local-first Tauri desktop editor for Markdown and text files. It combines CodeMirror editing, live remark/rehype preview, vendored Prism highlighting, Mermaid diagrams, tabs, and an optional native PowerShell PTY drawer in one window. It serves as a focused personal editing utility within the DRS project group. |
 
-### Command Tools, Generators, and Local Pipelines
+### Command Tools and Evaluation Pipelines
 
 | Project | Status | Completion | Description |
 |---|---:|---:|---|
-| **ScriptWriters** | Production | 90% | Local pipeline that turns topic Markdown into multi-host podcast scripts and rendered audio using Ollama, TTS backends, and FFmpeg. |
-| **ArchiveHasher** | Production | 90% | Go tools for eight-algorithm archive manifests and detached PGP or post-quantum signatures. |
-| **ClipboardFilter** | Active | 85% | Python/TOML pipeline that extracts atomic clipboard entries, creates embeddings, and stores/searches them through DuckDB. |
-| **FH-RefToolkit** | Paused | 80% | Python CLI for generating Flathub reference lists and downloading `.flatpakref` descriptors. |
-| **ConversionTools** | In Progress | 70% | Local-first audio, speech, and video conversion workflows spanning Rust and supporting utilities. |
-| **LangThemeGenerator** | In Progress | 70% | Palette analysis and semantic-token generator for editor, terminal, CSS, and interface theme outputs. |
-| **AnalyzeProjects** | In Progress | 60% | CTS-governed portfolio analyzer that scans an explicit project index and generates structured project assessments using local or hosted models. |
+| **Archive Hasher** | Production | 90% | Two Go CLIs implement the AAMHS publication workflow: archive-hasher computes eight hashes for an archive and writes snapshot-hashes.txt, while manifest-signer creates detached PGP and optional SLH-DSA signatures without changing the manifest. |
+| **Analyze-Projects** | In Progress | 85% | AnalyzeProjects scans the explicitly registered Aptlantis portfolio, applies group-specific governance prompts, normalizes model responses into structured project records, and compiles JSON and Markdown dashboard outputs. It is a Python analysis utility supporting local verification with optional OpenAI-compatible model calls. |
+| **Single-Project Evaluator** | In Progress | 72% | A read-only Python CLI that inventories one target project, extracts manifest and governance context, prepares bounded reasoning inputs, and writes structured evaluation and provenance artifacts without modifying or executing the target project. |
+| **ReleaseHasher** | In Progress | 70% | Go CLI that hashes one regular release artifact with SHA256, BLAKE3-256, and 128-byte KT128, then writes a TOML hash manifest and optionally returns JSON result metadata. It provides a small CTS release-hashing utility for Aptlantis publication workflows. |
+| **ConversionTools** | In Progress | 65% | A local collection of interactive audio, speech-transcription, and video-to-MP4 workflows. Rust utilities invoke FFmpeg for media conversion, while a Python CPU-Whisper utility produces transcripts. It serves as a CTS-governed personal conversion toolbox within Aptlantis. |
 
 ### Datasets, Mirrors, and Research Systems
 
 | Project | Status | Completion | Description |
 |---|---:|---:|---|
-| **CratesDataset** | In Progress | 93% | Deterministic Rust dataset foundry producing versioned crates.io datasets with provenance, statistics, and integrity records. |
-| **CloneCratesio** | Paused | 92% | High-concurrency Go mirror and archival pipeline for crates.io artifacts, bundles, JSONL audit records, metadata, and observability. |
-| **WSL** | In Progress | 65% | Governed project group for building and packaging multiple WSL distributions from ISO, SquashFS, rootfs, launcher, and MSIX workflows. |
-| **HolyC-Llama** | In Progress | 60% | HolyC/TempleOS dataset and model-preparation workspace with Rust and Python generation tooling. |
-| **aptlantis.net** | Prototype | 58% | Append-only crates.io mirror pipeline with snapshots, AAMHS provenance, torrent packaging, datasets, analytics, and an Astro public surface. |
+| **CloneCratesio** | Production | 94% | Go and Python command-tool pipeline that clones a local crates.io index, downloads crate archives at registry scale, optionally writes rolling tar.zst bundles, generates sidecar metadata, restores bundles, and exposes Prometheus and pprof telemetry. |
+| **CratesDataset** | In Progress | 93% | Rust CLI dataset foundry that converts immutable monthly crates.io JSONL snapshots into eight deterministic, provenance-rich datasets in JSONL-Zstandard and Parquet formats, with bounded partition processing, validation, integrity manifests, and a gated Hugging Face publication adapter. |
 
-### Visual, Asset, and Public Explanation Systems
+### Visual, Asset, and Semantic Systems
 
 | Project | Status | Completion | Description |
 |---|---:|---:|---|
-| **SESM** | In Progress | 90% | SVG metadata standard, schema, validators, fixtures, converters, and safe-profile guidance. |
-| **AptlantisLogos** | Paused | 75% | Source logos, palettes, metadata, atlas output, and scripts for preserving and rendering Aptlantis visual assets. |
-| **Blue Slate** | Candidate Active | 70% | Canonical visual tokens, patterns, starter packs, framework notes, adoption guidance, and validation checklist. |
-| **Aptlantis Studio** | Draft | 60% | Evidence-first public project and teaching portfolio built with React/Vite, static project data, and a small Rust Axum service. |
-| **ReactComponentLibrary** | In Progress | 40% | Private React component workspace for reusable Aptlantis Blue Slate interface patterns. |
-
-### Governance and Standards Projects
-
-| Project | Status | Completion | Description |
-|---|---:|---:|---|
-| **DRS** | Production | 95% | Desktop release governance and verification. |
-| **WGS** | Active | 92% | Workspace constitution, manifests, lifecycle, agent orientation, and audits. |
-| **SFDS** | Production | 90% | Standard-authoring framework and suite contract. |
-| **AAMHS** | In Progress | 85% | Archive multi-hash and detached-signature standard. |
-| **CTS** | In Progress | 85% | Command-tool contracts and automation behavior. |
-| **PPS** | Active | 85% | Proposal-first project definition and readiness gates. |
-| **WDS** | In Progress | 80% | Website publication and deployment governance. |
-| **LDS** | Candidate Active | 75% | Library interface stability and compatibility governance. |
+| **SESM** | In Progress | 88% | SESM defines embedded JSON metadata for SVG assets, covering identity, provenance, themes, UI context, archival hints, integrity claims, and non-authoritative LLM context. It provides schemas, embedding and conversion tools, safe-profile validation, fixtures, and adoption guidance for Aptlantis Studio and related indexing, archive, and pipeline workflows. |
+| **AptlantisLogos** | Paused | 75% | A paused local asset-tooling project that preserves logo source material, rendered formats, palettes, themes, metadata, and generation scripts for Aptlantis and related project assets. |
+| **BlueSlate** | In Progress | 70% | BlueSlate is a candidate-active visual-system standard defining semantic design tokens, layout patterns, framework profiles, starter packs, and adoption evidence for Aptlantis tools, dashboards, project pages, and Windows utilities. |
 
 ---
 
@@ -346,13 +301,13 @@ This changes the development model from an undifferentiated backlog into a portf
 
 Several recurring maturity gaps appear across otherwise capable projects:
 
-1. **Release evidence needs consolidation.** Builds and installers may exist while hashes, logs, install checks, and per-version verification blocks remain incomplete.
-2. **Manifest and product versions can drift.** Evaluations surface mismatches between manifests, package metadata, installers, and release notes.
-3. **CLI behavior needs contracts.** CTS-governed tools often need clearer exit-code tables, `--version`, explicit machine-readable modes, structured errors, and stdout/stderr separation.
-4. **Destructive behavior needs stronger previews.** Overwrite, replacement, migration, and publishing commands benefit from dry-run, confirmation, and recovery contracts.
-5. **Web publication needs operational records.** WDS-governed sites need deployment records, accessibility checks, route inventories, rollback notes, monitoring expectations, and publication evidence.
-6. **Standards need executable validation.** Several standards are structurally mature but would benefit from reference validators and machine-readable conformance output.
-7. **Paused does not mean failed.** Several highly complete projects are paused because the workflow is currently satisfied, priorities changed, or release/governance work awaits a deliberate decision.
+1. **Verification trails still need closing.** Tagged releases, installers, uninstall behavior, published archives, checksums, and current build evidence remain open for several projects.
+2. **Governance records can drift from implementation.** Schemas, manifests, child registrations, guidance, examples, and promoted copies need routine reconciliation.
+3. **Command contracts need consistent adoption.** CTS-governed tools still need stable exit codes, version output, structured results, stdout/stderr rules, and documented error behavior.
+4. **Destructive actions need explicit safeguards.** Overwrite, replacement, migration, and publishing workflows benefit from preview, confirmation, recovery, and disposable-environment qualification.
+5. **Provenance and distribution decisions must be recorded.** Dependency origins, licensing bases, redistribution authority, build inputs, and publication approvals remain material evidence.
+6. **Standards benefit from executable conformance.** Machine-readable validator output, fixtures, cross-field checks, and adopter coverage turn mature documentation into repeatable verification.
+7. **Lifecycle labels describe operating posture, not quality.** Production, maintenance, paused, in-progress, and prototype states answer a different question from completion.
 
 ---
 
@@ -493,12 +448,10 @@ APTlantis uses lifecycle labels to communicate reality rather than momentum.
 | Status | Meaning |
 |---|---|
 | **Production** | Mature and presently treated as an authoritative or operational project, though further improvements may remain. |
-| **Active** | Receiving current development or governance attention. |
-| **Candidate Active** | Useful and intentionally advancing, but still collecting adoption, validation, or promotion evidence. |
+| **Maintenance** | Operational and retained, with attention focused on reliability, compatibility, and selective improvements rather than expansion. |
 | **In Progress** | Substantial work exists, but important implementation, verification, or governance requirements remain open. |
 | **Prototype** | The architecture or workflow is being proved; destructive or public claims may remain intentionally constrained. |
 | **Paused** | Retained and potentially useful, but not receiving current implementation priority. A high completion value may still be accurate. |
-| **Draft** | The project identity and structure exist, but the public or governed form is still being assembled. |
 
 Statuses are expected to change as evidence changes. Historical state should be preserved rather than rewritten as though the project had always been in its current form.
 
@@ -512,9 +465,11 @@ Statuses are expected to change as evidence changes. Historical state should be 
 
 ## Evaluation Basis
 
-This README reflects the project evaluation generated on **2026-07-30**, covering **37 projects** and recording lifecycle, completion, complexity, summaries, missing pieces, next steps, and potential improvements.
+This README reflects the project evaluation generated on **2026-08-23**, covering **27 explicitly registered projects** and recording lifecycle, completion, complexity, summaries, missing pieces, next steps, and potential improvements.
 
 The evaluation is a portfolio snapshot, not a claim that every repository has passed fresh build, test, installation, publication, or release verification. Where those checks are missing, the evaluation records them as work rather than silently treating existing artifacts as current evidence.
+
+The evaluated set is intentionally determined by the AnalyzeProjects project index. Changes in the total project count between snapshots may therefore reflect a change in portfolio scope as well as project creation, archival, or lifecycle work.
 
 ---
 
