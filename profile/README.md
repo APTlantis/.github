@@ -45,6 +45,19 @@ The October 2, 2026 evaluation covers **45 projects** with an average assessed c
 | Medium complexity | **23** |
 | Low complexity | **8** |
 
+### Reading the complexity distribution
+
+The raw complexity totals count every evaluated project independently, which is useful for project-level planning but can overstate how much of the portfolio is made up of unrelated small systems.
+
+In this evaluation, **7 of the 8 Low-complexity projects are members of the SiYuan theme family**: Assembly, HolyC, Julia, QBasic, Scratch, TOML, and Zig. **BlueSlate**, another theme-family member, is assessed as Medium because it also functions as a broader design-system implementation.
+
+| Low-complexity concentration | Projects |
+|---|---:|
+| SiYuan theme family | **7** |
+| Other Low-complexity work | **1** |
+
+These remain separate projects because they are independently packaged, versioned, maintained, and verified. At the portfolio level, however, they are better understood as **repeated implementations of a shared theme-production pattern** rather than seven unrelated simple projects. The low-complexity count therefore reflects both genuinely bounded work and the payoff from reusable architecture, palettes, generation tooling, and packaging conventions.
+
 A completion percentage is an assessment of how much of the intended project exists. It is **not** a substitute for lifecycle state, release verification, or governance conformance.
 
 APTlantis therefore keeps four questions separate:
@@ -112,10 +125,25 @@ The GitHub organization is a public projection of a larger local-first workspace
 
 ### Themes, Knowledge Tools, and Public Surfaces
 
-The current evaluation also includes the SiYuan theme family, the Windows terminal plugin, code-artifact intake, the public City Hall website, and the supporting design standards behind them.
+The current evaluation includes a substantial **SiYuan theme family** alongside plugins, knowledge-work utilities, the public City Hall website, and supporting design standards.
 
-- **Aptlantis QBasic** — In Progress · 90%
-- **Aptlantis Assembly / BlueSlate / HolyC / Julia / Scratch / TOML / Zig** — In Progress · 80%
+The theme repositories are intentionally evaluated separately because each is a real maintained artifact with its own package, compatibility surface, palette, generated assets, and runtime-verification needs. They also share enough architecture that they should be read as a **project family** rather than as eight unrelated applications.
+
+| SiYuan theme family | Current posture | Portfolio role |
+|---|---|---|
+| **Aptlantis QBasic** | In Progress · 90% · Low | Family member |
+| **Aptlantis Assembly** | In Progress · 80% · Low | Family member |
+| **Aptlantis HolyC** | In Progress · 80% · Low | Family member |
+| **Aptlantis Julia** | In Progress · 80% · Low | Family member |
+| **Aptlantis Scratch** | In Progress · 80% · Low | Family member |
+| **Aptlantis TOML** | In Progress · 80% · Low | Family member |
+| **Aptlantis Zig** | In Progress · 80% · Low | Family member |
+| **Aptlantis BlueSlate** | In Progress · 80% · Medium | Theme implementation + broader design-system work |
+
+That distinction matters: repeated low-complexity descendants are partly evidence that the harder architectural work has already been captured upstream. Shared palette generation, semantic-role mapping, packaging conventions, and SiYuan integration make additional themes smaller without making them trivial or disposable.
+
+Other evaluated work in this layer includes:
+
 - **Code Artifact Intake** — In Progress · 90%
 - **Windows Terminal for SiYuan** — In Progress · 85%
 - **APTlantis City Hall website** — In Progress · 85%
