@@ -4,10 +4,10 @@
 
 ### Local-first software, governed engineering systems, archival infrastructure, and operator-focused tools.
 
-![Projects](https://img.shields.io/badge/projects-34-2aa5bc?style=for-the-badge)
-![Average Completion](https://img.shields.io/badge/average_completion-75.6%25-8957e5?style=for-the-badge)
-![Production](https://img.shields.io/badge/production-5-2ea043?style=for-the-badge)
-![Evaluated](https://img.shields.io/badge/evaluated-2026--09--08-51678d?style=for-the-badge)
+![Projects](https://img.shields.io/badge/projects-45-2aa5bc?style=for-the-badge)
+![Average Completion](https://img.shields.io/badge/average_completion-81.8%25-8957e5?style=for-the-badge)
+![Production](https://img.shields.io/badge/production-3-2ea043?style=for-the-badge)
+![Evaluated](https://img.shields.io/badge/evaluated-2026--10--02-51678d?style=for-the-badge)
 
 **Build useful local tools. Preserve important artifacts. Govern the work. Record the evidence.**
 
@@ -19,7 +19,7 @@
 
 APTlantis is a personal software ecosystem built around practical, operator-centered computing.
 
-It includes Windows desktop applications, native and cross-platform command tools, archival and integrity systems, structured-data pipelines, dataset foundries, workspace governance, release standards, IDE integrations, local infrastructure utilities, and public documentation surfaces.
+It includes Windows desktop applications, native and cross-platform command tools, archival and integrity systems, structured-data pipelines, dataset and mirror tooling, workspace governance, release standards, IDE and knowledge-work integrations, local infrastructure utilities, and public documentation surfaces.
 
 The projects are not treated as isolated experiments. They increasingly share manifests, schemas, lifecycle records, release evidence, command contracts, integrity practices, visual conventions, and a common governance layer in **City Hall**.
 
@@ -29,26 +29,28 @@ The projects are not treated as isolated experiments. They increasingly share ma
 
 ## Current Portfolio Snapshot
 
-The September 8, 2026 evaluation covers **34 projects** with an average assessed completion of **75.6%**.
+The October 2, 2026 evaluation covers **45 projects** with an average assessed completion of **81.8%**.
 
 | Metric | Current Evaluation |
 |---|---:|
-| Total projects | **34** |
-| Average completion | **75.6%** |
-| Production | **5** |
-| In progress | **21** |
-| Maintenance | **3** |
-| Paused | **3** |
+| Total projects | **45** |
+| Average completion | **81.8%** |
+| Production | **3** |
+| In progress | **33** |
+| Maintenance | **4** |
+| Paused | **2** |
+| Planning | **1** |
 | Prototype | **2** |
-| High complexity | **23** |
-| Medium complexity | **11** |
+| High complexity | **14** |
+| Medium complexity | **23** |
+| Low complexity | **8** |
 
 A completion percentage is an assessment of how much of the intended project exists. It is **not** a substitute for lifecycle state, release verification, or governance conformance.
 
 APTlantis therefore keeps four questions separate:
 
 - **Completion:** How much of the intended system exists?
-- **Lifecycle:** Is the project in progress, paused, maintained, prototyped, or production?
+- **Lifecycle:** Is the project in progress, paused, maintained, prototyped, planned, or production?
 - **Verification:** Have build, tests, artifacts, installation behavior, hashes, and release evidence been recorded?
 - **Governance:** Does the project satisfy the standards appropriate to what it produces?
 
@@ -60,19 +62,24 @@ APTlantis therefore keeps four questions separate:
 
 | Standard | Status | Completion | Purpose |
 |---|---:|---:|---|
-| **DRS** | Production | 98% | Windows desktop release readiness, evidence, packaging, verification, and withdrawal records |
-| **SFDS** | Production | 95% | Structure, metadata, validation, adoption, versioning, and preservation of standards |
-| **WGS** | In Progress | 92% | Workspace structure, entity manifests, registration, lifecycle visibility, audits, and recovery |
-| **AAMHS** | In Progress | 92% | Long-term archive integrity, multi-hash evidence, detached signatures, and verification |
-| **CTS** | In Progress | 92% | CLI contracts, streams, exit codes, structured output, safeguards, and automation behavior |
-| **SESM** | In Progress | 92% | Semantic metadata embedded in SVG assets, safe profiles, schemas, and validation |
-| **PPS** | In Progress | 90% | Project intent, scope, success/failure criteria, risk, readiness, and roadmap definition |
-| **ARHS** | Production | 90% | Release-artifact hash evidence using SHA256, BLAKE3-256, and KT128 |
-| **LDS** | In Progress | 88% | Library and SDK interfaces, stability, compatibility, consumers, and extension contracts |
-| **WDS** | In Progress | 85% | Website manifests, deployment evidence, accessibility, metadata, routes, and rollback |
-| **BlueSlate** | In Progress | 70% | Visual tokens, operational layouts, framework profiles, and adoption records |
+| **DRS** | Production | 94% | Desktop release readiness, exact-artifact evidence, packaging, verification, and release gating |
+| **SFDS** | Production | 94% | Structure, versioning, validation, adoption, promotion, and preservation of governance standards |
+| **SESM** | In Progress | 92% | Structured semantic metadata for SVG assets, safe profiles, schemas, fixtures, and ingestion boundaries |
+| **AAS** | In Progress | 90% | Evidence requirements for analysis and evaluation, including inputs, tools, metrics, environments, and run records |
+| **AAMHS** | In Progress | 89% | Archive-preservation integrity, multi-hash manifests, detached signatures, and revalidation |
+| **CTS** | In Progress | 89% | CLI command contracts, output envelopes, exit codes, compatibility, and destructive-operation safety |
+| **WDS** | In Progress | 89% | Website manifests, deployment evidence, accessibility, metadata, routes, rollback, and monitoring |
+| **WGS** | In Progress | 88% | Workspace placement, manifest authority, registration, lifecycle visibility, shared services, and audits |
+| **ARHS** | In Progress | 88% | Release-artifact integrity evidence using SHA256, BLAKE3-256, and KT128 |
+| **BlueSlate** | In Progress | 88% | Visual-system tokens, generated translations, framework profiles, layouts, and adoption records |
+| **LDS** | In Progress | 88% | Library, package, SDK, interface, stability, and compatibility governance |
+| **NeonInk** | In Progress | 88% | Data-presentation semantics for reports, charts, datasets, diagrams, and portable artifacts |
+| **DDS** | In Progress | 87% | Dataset provenance, licensing, transformations, validation, splits, integrity, and preservation |
+| **SIS** | In Progress | 87% | Local service lifecycle, health, storage, resource, recovery, and agent-safety contracts |
+| **ATS** | In Progress | 85% | Recoverable agent task records, validation evidence, blockers, lifecycle, and handoffs |
+| **PPS** | In Progress | 85% | Project intent, scope, readiness, proposal records, and handoff into workspace and delivery governance |
 
-The practical chain is simple: **PPS defines the project → WGS places and governs it → the appropriate delivery standard governs what it produces → integrity standards preserve the evidence.**
+The practical chain is simple: **PPS defines the project → WGS places and governs it → the appropriate delivery standard governs what it produces → integrity and evidence standards preserve what happened.**
 
 ---
 
@@ -84,36 +91,37 @@ The GitHub organization is a public projection of a larger local-first workspace
 
 | Project | Current posture | What it does |
 |---|---|---|
-| [Filing Cabinet](https://github.com/APTlantis/Filing-Cabinet) | Maintenance · 88% | Local-first Windows vault for technical artifacts, structured metadata, previews, integrity checks, repair, recovery, and export |
-| [Structra](https://github.com/APTlantis/Structra) | Maintenance · 90% | Tauri workspace for editing, inspecting, transforming, and previewing structured data |
-| [Command Wizard](https://github.com/APTlantis/Command-Wizard) | Maintenance · 90% | Schema-driven command authoring and generation from TOML, with execution kept outside the application boundary |
-| [ChatArchive](https://github.com/APTlantis/ChatArchive) | In Progress · 78% | Local archive for OpenAI conversation exports with browsing, search, artifacts, export, refresh, and rollback |
-| [Ops Surface Red](https://github.com/APTlantis/Ops-Surface-Red) | In Progress · 60% | Native Red/View control surface for typed operational records and relationships |
-| [React Workbench](https://github.com/APTlantis/React-Workbench) | In Progress · 70% | Theme/component laboratory with TOML source records, screenshot verification, and page metadata |
-| [CodeNote](https://github.com/APTlantis/CodeNote) | Prototype · 55% | Focused local Tauri editor for Markdown/text with Prism, Mermaid, tabs, and terminal support |
+| [Filing Cabinet](https://github.com/APTlantis/Filing-Cabinet) | Maintenance · 94% | Windows VB.NET/WPF vault for technical artifacts with deterministic ingest, previews, related-artifact views, hashing, health analysis, repair, recovery, and export |
+| [Structra](https://github.com/APTlantis/Structra) | Maintenance · 92% | Local-first Windows Tauri workspace for structured JSON, YAML, TOML, XML, and schema-oriented editing and preview |
+| [Command Wizard](https://github.com/APTlantis/Command-Wizard) | Maintenance · 92% | TOML schema-driven CLI authoring, reviewed help imports, saved commands, managed launchers, and validated command generation |
+| [ChatArchive](https://github.com/APTlantis/ChatArchive) | In Progress · 84% | Windows-first archive for OpenAI conversation exports with filesystem-backed storage, SQLite state, search, artifacts, Markdown export, refresh, and rollback |
+| [Aptlantis Console](https://github.com/APTlantis/Aptlantis-Console) | In Progress · 78% | Local-first operations console spanning commands, Docker, repositories, databases, terminals, editing, intake, and operational memory |
+| [Hubris](https://github.com/APTlantis/Hubris) | Prototype · 65% | Windows DNS observation and policy cockpit with explicit intake, provenance-bearing query records, and a DuckDB-backed local timeline |
 
 ### Command Tools, Evaluation, and Data
 
 | Project | Current posture | What it does |
 |---|---|---|
-| [Crates.io Datasets](https://github.com/APTlantis/Cratesio-Datasets) | In Progress · 93% | Rust dataset foundry producing provenance-rich JSONL and Parquet datasets from immutable crates.io captures |
-| [Clone Crates.io](https://github.com/APTlantis/Clone-Cratesio) | Paused · 88% | Go/Python crates.io mirror and archival pipeline with bundles, metadata sidecars, and JSONL audit evidence |
-| [Analyze Projects](https://github.com/APTlantis/Analyze-Projects) | In Progress · 75% | Portfolio evaluator that reads bounded project evidence and compiles normalized JSON/Markdown assessments |
-| [Single Project Evaluator](https://github.com/APTlantis/Single-Project-Evaluator) | In Progress · 55% | Read-only evaluator for one project with bounded evidence, governance context, and preserved run provenance |
-| [Archive Hasher](https://github.com/APTlantis/Archive-Hasher) | Production · 75% | Go tooling for AAMHS archive hashing and detached signing workflows |
-| [Release Hasher](https://github.com/APTlantis/Release-Hasher) | In Progress · 70% | Go CLI that produces SHA256, BLAKE3-256, and KT128 release hash manifests |
-| [Wayfinder](https://github.com/APTlantis/Wayfinder) | Active utility | Workspace cleanup and structural-discovery workflow used to surface drift for agent-assisted repair |
+| [Clone Crates.io](https://github.com/APTlantis/Clone-Cratesio) | Paused · 92% | Go/Python crates.io mirror with concurrent downloads, incremental updates, tar.zst bundles, sidecars, extraction, and telemetry |
+| [Analyze Projects](https://github.com/APTlantis/Analyze-Projects) | In Progress · 83% | Portfolio evaluator that normalizes bounded project evidence into per-project JSON, aggregate summaries, and a local dashboard |
+| [Single Project Evaluator](https://github.com/APTlantis/Single-Project-Evaluator) | Planning · 55% | Read-only one-project evaluator built around bounded evidence, authority records, governance context, preserved runs, and optional model analysis |
+| [Archive Hasher](https://github.com/APTlantis/Archive-Hasher) | Production · 80% | Go tooling for AAMHS archive hashing and detached-signature workflows |
+| [Release Hasher](https://github.com/APTlantis/Release-Hasher) | In Progress · 70% | Go CLI for SHA256, BLAKE3-256, and KT128 release hash manifests with human and JSON output |
+| [Wayfinder](https://github.com/APTlantis/Wayfinder) | Public utility · not in current evaluation | Workspace cleanup and structural-discovery workflow used to surface drift for agent-assisted repair |
+| [Crates.io Datasets](https://github.com/APTlantis/Cratesio-Datasets) | Public repository · not in current evaluation | Dataset and transformation work built around captured crates.io material |
 
-### Current Experimental Edge
+### Themes, Knowledge Tools, and Public Surfaces
 
-Recent work is deliberately widening the language and tooling surface where the project fit is useful:
+The current evaluation also includes the SiYuan theme family, the Windows terminal plugin, code-artifact intake, the public City Hall website, and the supporting design standards behind them.
 
-- **Red** — native Red/View operator interfaces and a JetBrains plugin around `redlangserver`
-- **D** — staged JetBrains IDE integration and a planned successor to WingettingQB64
-- **WSL** — native `.wsl` packaging closure work for selected Linux distributions
-- **Rust / Go / Python / Tauri / WPF** — retained where they fit existing desktop, pipeline, integrity, and evaluation work
+- **Aptlantis QBasic** — In Progress · 90%
+- **Aptlantis Assembly / BlueSlate / HolyC / Julia / Scratch / TOML / Zig** — In Progress · 80%
+- **Code Artifact Intake** — In Progress · 90%
+- **Windows Terminal for SiYuan** — In Progress · 85%
+- **APTlantis City Hall website** — In Progress · 85%
+- **Aptlantis Logos** — Paused · 90%
 
-This is not language collection for its own sake. The intent is to use small, practical projects to learn what each ecosystem is actually good at while keeping the tools bounded and useful.
+Repositories that are public but absent from the current evaluation are intentionally left without inherited completion scores.
 
 ---
 
@@ -121,12 +129,12 @@ This is not language collection for its own sake. The intent is to use small, pr
 
 APTlantis currently spans six connected layers:
 
-1. **Governance and standards** — project proposals, workspace governance, delivery standards, integrity standards, and visual-system governance.
+1. **Governance and standards** — project proposals, workspace governance, delivery standards, evidence standards, integrity standards, and visual-system governance.
 2. **Operator applications** — interfaces for artifact retention, structured data, commands, archives, operations, technical editing, and system workflows.
 3. **Command tools and pipelines** — bounded utilities that transform source material into reproducible outputs and evidence.
 4. **Preservation and integrity** — hashes, manifests, detached signatures, provenance, release records, and archive verification.
-5. **Data, research, and mirrors** — reproducible captures, dataset foundries, software mirrors, and analysis surfaces.
-6. **Public explanation** — repositories, documentation, websites, schemas, examples, and visual systems that make the work inspectable.
+5. **Data, research, mirrors, and knowledge systems** — reproducible captures, software mirrors, datasets, local analysis, and SiYuan-based exploration.
+6. **Public explanation** — repositories, documentation, websites, schemas, examples, visual systems, and reviewed snapshots that make the work inspectable.
 
 ---
 
